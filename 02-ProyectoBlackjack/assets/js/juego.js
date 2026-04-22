@@ -12,6 +12,7 @@ const cartasComputadora = document.querySelector('#ordenador-cartas');
 const puntosHTML = document.querySelectorAll("small");
 
 const crearDeck = () => {
+    deck = [];
     for (let index = 2; index < 10; index++) {
         for (const tipo of tipos) {
          deck.push(index+tipo);   
