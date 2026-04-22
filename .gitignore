@@ -1,0 +1,17 @@
+# Dependencias de npm
+node_modules/
+package-lock.json
+
+# Variables de entorno
+.env
+.env.local
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
