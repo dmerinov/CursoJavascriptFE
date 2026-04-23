@@ -1,22 +1,36 @@
-const carros = ['Ford', 'Mazda', 'Honda'];
+
+
+const carros = ['Ford','Mazda','Honda','Toyota'];
 
 let i = 0;
-let j = 0;
-// while (i< carros.length) {
-//     console.log(carros[i]);
+
+// while( i < carros.length ) {
+//     console.log( carros[i] );
+//     // i = i + 1;
 //     i++;
 // }
 
-//undefined y null se consideran nulos, así que se puede usar
-
-while (carros[i]) {
-    console.log(carros[i]);
+console.warn('While')
+// undefined
+// null
+// false
+while( carros[i] ) {
+    if ( i === 1 ){
+        // break;
+        i++;
+        continue;
+    }
+    
+    console.log( carros[i] );
     i++;
 }
 
-console.warn("Do while");
+
+console.warn('Do While');
+let j = 10;
 
 do {
-    console.log(carros[j])
-    j++
-} while (carros[j]);
+    console.log( carros[j]);
+    j++;
+} while( carros[j] );
+

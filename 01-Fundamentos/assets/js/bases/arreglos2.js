@@ -1,34 +1,42 @@
 let juegos = ['Zelda', 'Mario', 'Metroid', 'Chrono'];
+console.log('Largo:', juegos.length );
 
-console.log('Largo: ', juegos.length);
-console.log('Primero: ', juegos[0]);
-console.log('Ultimo: ', juegos[juegos.length - 1]);
+let primero = juegos[ 2 - 2 ];
+let ultimo  = juegos[ juegos.length - 1 ];
 
-//foreach
-juegos.forEach(
-    (elemento, indice, arr) => {
-        console.log(elemento, indice, arr);
-    }
-)
+console.log({ primero, ultimo });
 
-//añadir - push
-let nuevaLongitud = juegos.push('F-Zero');
-console.log(nuevaLongitud, juegos);
+juegos.forEach( (elemento, indice, arr) => {
+    console.log({ elemento, indice, arr });
+});
 
-//añadir al principio - unshift
-juegos.unshift('Fire Emblem');
-console.log(juegos);
+let nuevaLongitud = juegos.push( 'F-Zero' );
+console.log({ nuevaLongitud, juegos });
 
-//borrar último elemento - pop 
-let borrado = juegos.pop()
-console.log(borrado, juegos);
+nuevaLongitud = juegos.unshift('Fire Emblem');
+console.log({ nuevaLongitud, juegos });
 
-//borrar uno en particular - splice
+let juegoBorrado = juegos.pop();
+console.log({ juegoBorrado, juegos });
+
+
 let pos = 1;
-let juegosBorrados = juegos.splice(pos, 2);
-console.log({juegos, juegosBorrados});
 
-//saber posición de un juego - indexOf. Si regresa -1 es que no lo encontró.
+console.log( juegos );
+let juegosBorrados = juegos.splice( pos, 2);
+console.log({ juegosBorrados, juegos });
 
-let metroidIndex = juegos.indexOf('Metroid');
-console.log('Metroid Index: ',metroidIndex);
+
+let metroidIndex = juegos.indexOf('Metroid'); // CaSeSeNsItIvE
+console.log({ metroidIndex });
+
+
+//TODO: Referencia
+
+
+
+
+
+
+
+

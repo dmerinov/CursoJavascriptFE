@@ -1,38 +1,41 @@
+
 let a = 10;
 let b = a;
-
-console.log(a, b);
 a = 30;
-console.log(a, b);
 
-let juan = {nombre: 'Juan'};
-let ana = juan;
+console.log({ a, b });
 
-console.log(juan, ana);
-ana.nombre = "ana"
-console.log(juan, ana); // como se pasa por referencia juan pasa a ser ana también.
 
-const cambiaNombre = ({...persona}) => { // el spread rompe la relación entre objetos cuando se igualan por referencia
+let juan = { nombre: 'Juan' };
+let ana  = { ...juan };
+ana.nombre = 'Ana';
+
+console.log({ juan, ana });
+
+
+const cambiaNombre = ({ ...persona }) => {
     persona.nombre = 'Tony';
     return persona;
 }
 
-let peter = {nombre: 'Peter'};
-let tony = cambiaNombre(peter);
+let peter = { nombre: 'Peter' };
+let tony  = cambiaNombre( peter );
 
-console.log({peter, tony});
 
-//cuando hay que crear una copia del objeto se pone entre llaves.
+console.log({ peter, tony });
 
-let juan2 = {nombre: 'Juan'};
-let ana2 = {...juan};
+// Arreglos
+const frutas = ['Manzana', 'Pera', 'Piña'];
 
-console.log(juan2, ana2);
-ana.nombre = "ana"
-console.log(juan2, ana2); // como se pasa por referencia juan pasa a ser ana también.
+console.time('slice');
+const otrasFrutas = frutas.slice();
+console.timeEnd('slice');
 
-const frutas = ["Manzanas","Peras","Piña"];
-//const otrasFrutas = [...frutas]; ESTO ROMPE RELACIÓN ENTRE REFERNCIAS
-const otrasFrutas = frutas.slice() //ESTO TAMBIÉN
-otrasFrutas.push("Mango");
-console.table({frutas, otrasFrutas});
+console.time('spread');
+const otrasFrutas2 = [...frutas];
+console.timeEnd('spread');
+
+
+otrasFrutas.push('Mango');
+
+console.table({ frutas, otrasFrutas });

@@ -1,19 +1,21 @@
-const heroes = ["Batman", "Superman", "Wonderwoman","Aquaman"];
 
-for (let index = 0; index < heroes.length; index++) {
-    const element = heroes[index];
-    console.log(element);
+const heroes = ['Batman', 'Superman', 'Mujer Maravilla', 'Aquaman'];
+
+console.warn('For tradicional');
+for( let i = 0; i < heroes.length; i++ ) {
+    console.log( heroes[i] );
 }
 
-console.warn('forin')
-for (const heroe in heroes) {
-    if (!Object.hasOwn(heroes, heroe)) continue;
-    
-    const element = heroes[heroe];
-    console.log(heroes[heroe]);
+
+console.warn('For in');
+for( let i in heroes ) {
+    console.log( heroes[i] );
 }
 
-console.warn('forof')
-for (const hero of heroes) {
-    console.log(hero);
+console.warn('For of');
+for( let heroe of heroes ){
+    console.log( heroe );
 }
+
+
+

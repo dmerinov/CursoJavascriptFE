@@ -28,3 +28,17 @@ En esta sección tocaremos los siguientes temas:
 - **Patrón módulo** - Implementación del patrón de diseño módulo para organizar mejor el código
 - **Minimizar el código de forma manual** - Técnicas de minificación manual del código (posteriormente se realizará de forma automática)
 - **Optimizaciones y protección de código** - Mejoras de rendimiento y técnicas para proteger el código
+
+## feat/clases-esnext - Implementación
+
+En esta sección tocaremos los siguientes temas:
+
+- **Problemática de prototipos**
+- **Clases**
+- **Sets**
+- **Gets**
+- **Métodos estáticos**
+- **Gets estáticos**
+- **ESNext: Propiedades privadas (aún no soportado completamente)**
+- **Singletons**
+- **Múltiples constructores**
