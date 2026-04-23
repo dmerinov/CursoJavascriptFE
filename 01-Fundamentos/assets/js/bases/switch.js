@@ -1,28 +1,20 @@
-const dia = 0;
-switch (dia) {
-  case 0:
-    "Domingo";
-    break;
-  case 1:
-    "Lunes";
-    break;
-  case 2:
-    "Martes";
-    break;
-  case 3:
-    "Miercoles";
-    break;
-  case 4:
-    "Jueves";
-    break;
-  case 5:
-    "Viernes";
-    break;
-  case 6:
-    "Sábado";
-    break;
 
-  default:
-    break;
+
+const dia = '2'; // 0: Domingo
+
+switch( dia ) {
+    case 0:
+        console.log('Domingo');
+        break;
+    case 1: 
+        console.log('Lunes');
+        break;
+    case '2':
+        console.log('Martes');
+        break;
+    default:
+        console.log('No es lunes, martes o domingo');
 }
+
+
 

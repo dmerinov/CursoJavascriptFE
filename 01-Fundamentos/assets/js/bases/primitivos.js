@@ -1,35 +1,42 @@
-//Strings
+
 let nombre = 'Peter Parker';
-console.log(nombre);
+console.log( nombre );
+
 nombre = 'Ben Parker';
-console.log(nombre);
+console.log( nombre );
 
 nombre = "Tía May";
 nombre = `Tía May`;
 
-console.log(typeof(nombre));
+console.log( typeof nombre );
 
-//Booleano
-let esMarvel = true;
+nombre = 123;
+console.log( typeof nombre );
 
-//Numeros
-let edad = 18;
-console.log(typeof(nombre));
-edad = 18.00; // mismo tipo. Number.
-console.log(typeof(nombre));
 
-//Undefined
+let esMarvel = false;
+console.log( typeof esMarvel );
+
+
+let edad = 33;
+console.log( typeof edad );
+
+edad = 33.001;
+console.log( typeof edad );
+
+
 let superPoder;
-console.log(typeof superPoder);
+console.log( typeof superPoder ); // ???
 
-//Null
-let soyNull = null; // sale object.
+let soyNull = null;
+console.log( typeof soyNull ); // ???
 
-//Symbol - identifica propiedades de manera única
+
 let symbol1 = Symbol('a');
-let symbol2 = Symbol('a'); // símbolos diferentes aunque tengan lo mismo
+let symbol2 = Symbol('a');
 
-console.log(symbol1);
-console.log(symbol2);
-console.log(symbol1 === symbol2);
+console.log( typeof symbol1 );
+
+
+console.log( symbol1 === symbol2 );
 
