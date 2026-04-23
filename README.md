@@ -20,3 +20,11 @@ npm install
 3. Abrir el proyecto en tu navegador:
    - Para **01-Fundamentos**: abre `01-Fundamentos/index.html`
    - Para **02-ProyectoBlackjack**: abre `02-ProyectoBlackjack/index.html`
+
+## feat/module-pattern - Implementación
+
+En esta sección tocaremos los siguientes temas:
+
+- **Patrón módulo** - Implementación del patrón de diseño módulo para organizar mejor el código
+- **Minimizar el código de forma manual** - Técnicas de minificación manual del código (posteriormente se realizará de forma automática)
+- **Optimizaciones y protección de código** - Mejoras de rendimiento y técnicas para proteger el código
