@@ -53,6 +53,16 @@ En esta sección tocaremos los siguientes temas:
 - **Separación de responsabilidades** - Uso de módulos y patrones para organizar lógica de UI y negocio
 - **Persistencia** - Almacenamiento y recuperación de tareas en el navegador
 
+## feat/peticiones-http - Implementación
+
+En esta sección tocaremos los siguientes temas:
+
+- **Fetch API** - Consumo de APIs externas usando `fetch`
+- **Async / await** - Manejo de promesas para operaciones asíncronas
+- **Renderizado dinámico** - Actualización del DOM con datos recibidos de la API
+- **Eventos de usuario** - Recarga de contenido mediante botones y listeners
+- **Manejo de estado de carga** - Mostrar estado de carga mientras se espera la respuesta
+
 ## feat/callbacks
 
 **Variables de entorno**
