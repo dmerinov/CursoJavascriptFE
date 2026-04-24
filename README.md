@@ -42,3 +42,24 @@ En esta sección tocaremos los siguientes temas:
 - **ESNext: Propiedades privadas (aún no soportado completamente)**
 - **Singletons**
 - **Múltiples constructores**
+
+## feat/To Do App - Implementación
+
+En esta sección tocaremos los siguientes temas:
+
+- **Modelo de datos** - Construcción del modelo `Todo` y gestión del estado de las tareas
+- **Renderizado dinámico** - Generación de la lista de tareas en el DOM
+- **Eventos del usuario** - Creación, eliminación y marcado de tareas como completadas
+- **Separación de responsabilidades** - Uso de módulos y patrones para organizar lógica de UI y negocio
+- **Persistencia** - Almacenamiento y recuperación de tareas en el navegador
+
+## feat/callbacks
+
+**Variables de entorno**
+**Callbacks y callback hell**
+**Promises y promise hell**
+**Async, async - await**
+**Evitar los callback o promise hells**
+**Funciones generadoras**
+**Funciones generadoras asíncronas**
+
